@@ -1,0 +1,162 @@
+{
+  "projectType": "sdk-library",
+  "projectName": "ZeroLeaks",
+  "projectDescription": "Autonomous AI security scanner that tests LLM systems for prompt injection vulnerabilities using multi-agent attack techniques",
+  "theme": "aspen",
+  "primaryColor": "#DC2626",
+  "lightColor": "#F97316",
+  "darkColor": "#B91C1C",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/architecture",
+              "concepts/multi-agent-system",
+              "concepts/attack-phases",
+              "concepts/scan-modes",
+              "concepts/tree-of-attacks"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/basic-scan",
+              "guides/advanced-configuration",
+              "guides/custom-agents",
+              "guides/interpreting-results"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "SDK Reference",
+        "groups": [
+          {
+            "group": "Main API",
+            "pages": [
+              "sdk/run-security-scan",
+              "sdk/create-scan-engine",
+              "sdk/scan-config",
+              "sdk/scan-result"
+            ]
+          },
+          {
+            "group": "Agents",
+            "pages": [
+              "sdk/agents/overview",
+              "sdk/agents/attacker",
+              "sdk/agents/evaluator",
+              "sdk/agents/strategist",
+              "sdk/agents/mutator",
+              "sdk/agents/inspector",
+              "sdk/agents/orchestrator",
+              "sdk/agents/target"
+            ]
+          },
+          {
+            "group": "Attack Techniques",
+            "pages": [
+              "sdk/probes/overview",
+              "sdk/probes/direct",
+              "sdk/probes/encoding",
+              "sdk/probes/personas",
+              "sdk/probes/social",
+              "sdk/probes/technical",
+              "sdk/probes/modern",
+              "sdk/probes/hybrid",
+              "sdk/probes/tool-exploits",
+              "sdk/probes/injection"
+            ]
+          },
+          {
+            "group": "Knowledge Base",
+            "pages": [
+              "sdk/knowledge/techniques",
+              "sdk/knowledge/payloads",
+              "sdk/knowledge/exfiltration",
+              "sdk/knowledge/defense-bypass"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "CLI Reference",
+        "groups": [
+          {
+            "group": "Commands",
+            "pages": [
+              "cli/overview",
+              "cli/scan",
+              "cli/probes",
+              "cli/techniques"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Advanced",
+        "groups": [
+          {
+            "group": "Examples",
+            "pages": [
+              "examples/basic-usage",
+              "examples/custom-models",
+              "examples/dual-mode-scanning",
+              "examples/advanced-features"
+            ]
+          },
+          {
+            "group": "Research",
+            "pages": [
+              "research/attack-frameworks",
+              "research/cve-references",
+              "research/defense-systems"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Multi-Agent Architecture with Strategist, Attacker, Evaluator, Mutator, Inspector agents",
+    "Tree of Attacks (TAP) for systematic vulnerability exploration",
+    "Modern attack techniques: Crescendo, Many-Shot, CoT Hijacking, Policy Puppetry, Siren, Echo Chamber",
+    "TombRaider pattern for defense fingerprinting and exploitation",
+    "Dual scan modes: System prompt extraction and prompt injection testing",
+    "Research-backed CVE-documented vulnerabilities",
+    "Configurable models for attacker, target, and evaluator agents",
+    "CLI tool with command-line interface",
+    "Comprehensive knowledge base of attack techniques and bypass methods"
+  ],
+  "publicApiSurface": [
+    "runSecurityScan(systemPrompt, options)",
+    "createScanEngine(config)",
+    "createAttacker(config)",
+    "createEvaluator(config)",
+    "createMutator(config)",
+    "createStrategist(config)",
+    "createTarget(config)",
+    "createInspector(config)",
+    "createOrchestrator(config)",
+    "createInjectionEvaluator(config)",
+    "getAllProbes()",
+    "getProbesByCategory(category)",
+    "getProbesForDefense(defense)",
+    "allDocumentedTechniques",
+    "allPayloadTemplates",
+    "allExfiltrationVectors",
+    "allBypassMethods"
+  ]
+}
